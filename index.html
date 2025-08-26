@@ -1,35 +1,42 @@
 
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>แนะนำตัว - ธัชพล กุลละวณิชย์</title>
+  <title>แนะนำตัว -ธัชพล กุลละวณิชย์</title>
 
   <style>
-    /* ใช้ฟอนต์ Google Sarabun */
     @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
 
     body {
       font-family: 'Sarabun', sans-serif;
-      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+      background: linear-gradient(135deg, #2ca61d 0%, #a1c4fd 100%);
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
-      color: #222;
+      min-height: 100vh;
+      color: #2ca61d;
+    }
+
+    .top-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
     }
 
     .container {
       background-color: #fff;
       padding: 40px 30px;
       border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-      max-width: 500px;
+      box-shadow: 0 10px 25px rgba(0, 128, 0, 128);
+      max-width: 600px;
       width: 90%;
       text-align: center;
+      margin: 20px 0;
       transition: transform 0.3s ease;
     }
 
@@ -53,16 +60,20 @@
       box-shadow: 0 5px 25px rgba(74, 144, 226, 0.8);
     }
 
-    h1 {
+    h1, h2 {
       font-weight: 700;
-      font-size: 2.4rem;
-      margin-bottom: 10px;
       color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #4a90e2;
     }
 
     p {
       font-weight: 400;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       line-height: 1.6;
       color: #555;
       margin-top: 0;
@@ -70,6 +81,29 @@
 
     p strong {
       color: #4a90e2;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Sarabun', sans-serif;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #006664;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #357ab8;
     }
 
     @media (max-width: 600px) {
@@ -91,20 +125,46 @@
   </style>
 </head>
 <body>
+
+  
+  <!-- ข้อมูลส่วนตัว -->
   <div class="container">
-    <!-- FullSizeRender 1.jpg -->
-    <img
-      class="profile"
-      src="FullSizeRender 1.jpg"
-      alt="FullSizeRender 1.jpg"
-    />
+    <img class="profile" src=0EABDAC6-F7F1-4772-9837-2DD42ABEAE3D.jpg"alt="รูปโปรไฟล์" />
     <h1>ธัชพล กุลละวณิชย์</h1>
     <p>
       นักเรียนผู้มีความตั้งใจอยากเข้าศึกษาต่อในคณะ
       <strong>วิศวะกรรมศาสตร์</strong><br />
-      ด้วยแนวคิด "ปัญหามีไว้แก้"
+    ด้วยแนวคิด "ปัญหามีไว้แก้"
     </p>
   </div>
+
+  <!-- ผลงาน -->
+  <div class="container">
+    <h2>🎖️ ผลงาน</h2>
+    <p><strong>หมวดหมู่ผลงาน:</strong> แข่งขันจักรยานยนต์ทางดิน</p>
+  </div>
+
+  <!-- การศึกษา -->
+  <div class="container">
+    <h2>🎓 การศึกษา</h2>
+    <p><strong>ชื่อสถาบัน:</strong> โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี</p>
+    <p><strong>แผนการเรียน:</strong> STEM</p>
+  </div>
+
+  <!-- ทักษะ -->
+  <div class="container">
+    <h2>🧠 ทักษะ</h2>
+    <p><strong>Hard Skills:</strong> มีทักษะการควบคุมจักรยานยนต์ขั้นสูง</p>
+    <p><strong>Soft Skills:</strong> ใจเย็น อารมณ์ดี</p>
+  </div>
+
+  <!-- ติดต่อ -->
+ 
+    <p><strong>อีเมล:</strong> 34949.skn@skn.ac.th</p>
+    <p><strong>โซเชียลมีเดีย:</strong> thatcha_ln</p>
+  </div>
+
 </body>
 </html>
+
 
