@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ประวัติการศึกษา - นายธัชพล</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      padding: 40px;
+      background: linear-gradient(to right, #f0fff0, #e0f7fa);
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    .edu-block {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+      border-left: 6px solid #2e7d32;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .edu-block:hover {
+      background-color: #e0f2f1;
+    }
+
+    .edu-logo {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .edu-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .edu-info h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #1b5e20;
+    }
+
+    .edu-info p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 ประวัติการศึกษา</h1>
+
+    <div class="edu-block">
+      <div class="edu-logo">
+        <img src="PN.png" alt="โลโก้อนุบาล" />
+      </div>
+      <div class="edu-info">
+        <h2>ระดับอนุบาล</h2>
+        <p>โรงเรียนชลประทานวิทยา</p>
+        <p>ปีการศึกษา: 2554 - 2555</p>
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <div class="edu-logo">
+        <img src="PN.png" alt="โลโก้ประถม" />
+      </div>
+      <div class="edu-info">
+        <h2>ระดับประถมศึกษา</h2>
+        <p>โรงเรียนชลประทานวิทยา</p>
+        <p>ปีการศึกษา: 2555 - 2563</p>
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <div class="edu-logo">
+        <img src="pm.jpeg" alt="โลโก้ม.ต้น" />
+      </div>
+      <div class="edu-info">
+        <h2>ระดับมัธยมศึกษาตอนต้น</h2>
+        <p>โรงเรียนชลประทานวิทยา</p>
+        <p>ปีการศึกษา: 2563 - 2565</p>
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <div class="edu-logo">
+        <img src="skn.jpeg" alt="โลโก้ม.ปลาย" />
+      </div>
+      <div class="edu-info">
+        <h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+        <p>โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี</p>
+        <p>ปีการศึกษา: 2566 - ปัจจุบัน</p>
+      </div>
+    </div>
+
+    <button onclick="history.back()">ย้อนกลับ</button>
+  </div>
+</body>
+</html>
